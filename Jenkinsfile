@@ -13,7 +13,7 @@ pipeline {
 
             steps {
                 
-                    sh 'mvn clean test'
+                    sh 'mvn clean test -Dsuite=recharge'
             }
         }
         stage ('Install Stage') {
