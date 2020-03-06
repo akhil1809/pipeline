@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Undostres"  ><!-- parallel="tests" -->
+
+  <!--  <test  name="TestFirefox">  
+  
+  <parameter name="browserName"      value="FIREFOX"/>
+  	<parameter name="platFormName"   value="WEB"/>
+  	<parameter name="url"       	 value="http://prueba.undostres.com.mx"/>
+  	
+  	<groups>
+  		<run>
+  			<include name="regression"></include>
+  		</run>
+  	</groups>
+  	<packages>
+  		<package name="undostres.com.pruba.*"></package>
+  	</packages>
+  </test> -->   <!-- Test -->
+  <test  name="TestChrome">  <!-- thread-count="5" -->
+  
+  <parameter name="browserName"      value="CHROME"/>
+  	<parameter name="platFormName"   value="WEB"/>
+  	<parameter name="url"       	 value="http://prueba.undostres.com.mx"/>
+  	
+  	<groups>
+  		<run>
+  			<include name="regression"></include>
+  		</run>
+  	</groups>
+  	<packages>
+  		<package name="undostres.com.pruba.*"></package>
+  	</packages>
+  </test> <!-- Test -->
+   <listeners>
+	 <listener class-name="undostres.com.pruba.utils.ListnerTest"/>
+   </listeners>
+</suite> <!-- Suite -->
+	
