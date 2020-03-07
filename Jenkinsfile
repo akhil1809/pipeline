@@ -23,5 +23,11 @@ pipeline {
                
             }
         }
+        stage ('Generate Report'){
+            steps
+            {
+                sh 'allure serve allure-results'
+            }
+        } 
     }
 }
