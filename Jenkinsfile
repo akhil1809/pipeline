@@ -23,11 +23,10 @@ pipeline {
                
             }
         }
-        stage ('Generate Report'){
-            steps
-            {
-                sh 'allure serve allure-results'
-            }
-        } 
+    }
+    post {
+        always {
+            sh 'allure serve allure-results'
+        }
     }
 }
