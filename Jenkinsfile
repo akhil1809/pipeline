@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     stages {
-        stage ('Compile Stage')  {
+        stage ('Compile Stage')    {
 
             steps {
                 
